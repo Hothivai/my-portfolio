@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contact - Ho Thi Vai</title>
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Ép hiển thị và giữ layout ngang */
+    #contact {
+      opacity: 1 !important;
+      visibility: visible !important;
+      padding: 60px 0;
+    }
+    .info-wrap {
+      background: #fff;
+      padding: 30px;
+      height: 100%; /* Cho bằng chiều cao với form */
+      border-top: 3px solid #34b7a7;
+      border-bottom: 3px solid #34b7a7;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    }
+    .php-email-form {
+      background: #fff;
+      padding: 30px;
+      height: 100%;
+      border-top: 3px solid #34b7a7;
+      border-bottom: 3px solid #34b7a7;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    }
+    .info-item i {
+      color: #34b7a7;
+      font-size: 20px;
+      margin-right: 15px;
+    }
+    .php-email-form button {
+      background: #34b7a7;
+      border: 0;
+      padding: 10px 30px;
+      color: #fff;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+    .php-email-form button:hover {
+      background: #2da192;
+    }
+    /* Đảm bảo row luôn là flex để nằm ngang */
+    .row-flex {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+
+<body class="contact-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">HO THI VAI</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-social-links">
+        <a href="https://www.linkedin.com/in/hothivai0406" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Hothivai" target="_blank"><i class="bi bi-github"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="contact" class="contact">
+      <div class="container">
+        
+        <div class="section-title text-center mb-5">
+          <h2 style="font-weight: 700;">CONTACT</h2>
+          <p>Feel free to reach out for internship opportunities or any inquiries!</p>
+        </div>
+
+        <div class="row row-flex gy-4">
+
+          <div class="col-lg-5">
+            <div class="info-wrap">
+              <div class="info-item d-flex mb-4">
+                <i class="bi bi-geo-alt"></i>
+                <div>
+                  <h3 style="font-size: 18px; font-weight: 700;">Address</h3>
+                  <p>101B Le Huu Trac, Son Tra, Da Nang</p>
+                </div>
+              </div>
+              <div class="info-item d-flex mb-4">
+                <i class="bi bi-telephone"></i>
+                <div>
+                  <h3 style="font-size: 18px; font-weight: 700;">Call Me</h3>
+                  <p>0855 036 007</p>
+                </div>
+              </div>
+              <div class="info-item d-flex mb-4">
+                <i class="bi bi-envelope"></i>
+                <div>
+                  <h3 style="font-size: 18px; font-weight: 700;">Email Me</h3>
+                  <p>vai.ho27@student.passerellesnumeriques.org</p>
+                </div>
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.128212170642!2d108.23849557460111!3d16.059103739709776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142177f10577771%3A0x673a55288a834246!2zMTAxQiBMw6ogSOG7r3UgVHLDoWMsIEFuIEjhuqNpIMSQw7RuZywgU8ahbiBUcsOgLCDEkMOgIE7hurVuZyA1NTAwMDAsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1714150000000!5m2!1sen!2s" 
+              frameborder="0" style="border:0; width: 100%; height: 250px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="#" class="php-email-form">
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <label class="form-label">Your Name</label>
+                  <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Your Email</label>
+                  <input type="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="col-md-12">
+                  <label class="form-label">Subject</label>
+                  <input type="text" class="form-control" placeholder="Subject" required>
+                </div>
+                <div class="col-md-12">
+                  <label class="form-label">Message</label>
+                  <textarea class="form-control" rows="8" placeholder="Message" required></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div></div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer light-background mt-5" style="padding: 20px 0;">
+    <div class="container text-center">
+      <p>© 2026 <strong>Ho Thi Vai</strong>. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
